@@ -2383,7 +2383,7 @@ public final class InputMethodManager {
                     != PackageManager.PERMISSION_GRANTED) {
                 return;
             }
-            final List<InputMethodInfo> imis = getEnabledInputMethodList();
+ /*           final List<InputMethodInfo> imis = getEnabledInputMethodList();
             final int numImis = imis.size();
             boolean found = false;
             for (int i = 0; i < numImis; ++i) {
@@ -2402,6 +2402,7 @@ public final class InputMethodManager {
                     + "when the caller has WRITE_SECURE_SETTINGS is deprecated. This behavior may "
                     + "be completely removed in a future version.  Update secure settings directly "
                     + "instead.");
+*/
             final ContentResolver resolver = fallbackContext.getContentResolver();
             Settings.Secure.putInt(resolver, Settings.Secure.SELECTED_INPUT_METHOD_SUBTYPE,
                     NOT_A_SUBTYPE_ID);
