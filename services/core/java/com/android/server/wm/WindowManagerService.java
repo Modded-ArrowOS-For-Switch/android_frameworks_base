@@ -4688,7 +4688,6 @@ public class WindowManagerService extends IWindowManager.Stub
                 // Ignore, we cannot do anything if we failed to register VR mode listener
             }
         }
-        com.nvidia.shieldtech.NvHookHelper.init(mContext);
     }
 
     private static boolean queryWideColorGamutSupport() {
